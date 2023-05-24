@@ -3,7 +3,11 @@ package com.fw.springbootmall.service;
 import com.fw.springbootmall.dto.ProductRequest;
 import com.fw.springbootmall.model.Product;
 
+import java.util.List;
+
 public interface ProductService {
+
+    List<Product> getProducts();
 
     Product getProductById(Integer productId);
 
