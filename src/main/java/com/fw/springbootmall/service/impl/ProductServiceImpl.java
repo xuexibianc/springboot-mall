@@ -1,5 +1,6 @@
 package com.fw.springbootmall.service.impl;
 
+import com.fw.springbootmall.constant.ProductCategory;
 import com.fw.springbootmall.dao.ProductDao;
 import com.fw.springbootmall.dto.ProductRequest;
 import com.fw.springbootmall.model.Product;
@@ -16,8 +17,8 @@ public class ProductServiceImpl implements ProductService {
     private ProductDao productDao;
 
     @Override
-    public List<Product> getProducts() {
-        return productDao.getProducts();
+    public List<Product> getProducts(ProductCategory category,String search) {
+        return productDao.getProducts(category,search);
     }
 
     @Override
