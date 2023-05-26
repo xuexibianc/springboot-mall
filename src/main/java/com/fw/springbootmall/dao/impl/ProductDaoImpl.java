@@ -1,6 +1,6 @@
 package com.fw.springbootmall.dao.impl;
 
-import com.fw.springbootmall.constant.ProductCategory;
+
 import com.fw.springbootmall.dao.ProductDao;
 import com.fw.springbootmall.dto.ProductQueryParams;
 import com.fw.springbootmall.dto.ProductRequest;
